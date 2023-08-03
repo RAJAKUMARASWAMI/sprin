@@ -18,7 +18,7 @@ pipeline {
         }
         stage('build and package') {
             steps {
-                sh script: 'mvn package'
+                sh script: '/usr/share/maven3.9/apache-maven-3.9.4/bin/mvn package'
             }
         }
         stage('reporting') {
